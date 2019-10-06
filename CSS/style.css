@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    width:100vw;
     font-family: 'Lato', sans-serif;
 }
 .customNav {
@@ -11,8 +12,8 @@ body {
     z-index: 100;
 }
 .navbar-brand img {
-    margin-left: 30%;
-    width: 50px;
+    margin-left: 35%;
+    width: 40px;
 }
 .nav-item {
     margin: 0px 15px;
@@ -26,34 +27,50 @@ body {
     margin: 0px 5%;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 450px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .jumboCopy {
-    width: 70%;
-    min-width: 500px;
-    max-width:  700px;
-    color: black;
-    text-align: center;
+  .display-4 {
+    font-family: 'Lato', sans-serif;
+    font-size:  35px !important; 
+    width: 40%;
+    text-align: left;
+    margin-left: 800px;
+    line-height: 60px !important;
   }
   #projectGrid { 
     margin: 0px 5%;
     display: grid;
-    grid-template-rows: 600px 600px;
+    grid-gap: 20px;
+    grid-template-rows: 450px 450px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
-    "furbaby pucgt"
+    "furbaby spa"
+    "nasa pucgt"
     ;
   }
   #furbaby {
       grid-area: furbaby;
       background-image: url("../images/furbaby-01.png");
+      box-shadow: 0px 0px 10px 0px rgba(240,240,240,1);
+  }
+  #spa {
+    grid-area: spa;
+    background-image: url("../images/spa.png");
+    background-size: cover;
+    box-shadow: 0px 0px 10px 0px rgba(240,240,240,1);
+  }
+  #nasa {
+    grid-area: nasa;
+    background-image: url("https://media.giphy.com/media/hs77YsbnpFvnoKaNR7/giphy.gif");
+    box-shadow: 0px 0px 10px 0px rgba(240,240,240,1);
   }
   #pucgt {
       grid-area: pucgt;
       background-image: url("../images/Pucgt-01-01.png");
+      box-shadow: 0px 0px 10px 0px rgba(240,240,240,1);
   }
   .projectGridArea {
     background-position: center;
@@ -76,11 +93,20 @@ body {
         max-width: 500px;
         font-size: 20px;
     }
+    .display-4 {
+      font-size:  25px !important; 
+      width: 50%;
+      text-align: left;
+      margin-left: 200px;
+      line-height: 35px !important;
+    }
     #projectGrid {
       grid-template-rows: 300px 300px;
       grid-template-columns: 1fr;
       grid-template-areas:  
       "furbaby"
+      "spa"
+      "nasa"
       "pucgt"
       ;
     }
